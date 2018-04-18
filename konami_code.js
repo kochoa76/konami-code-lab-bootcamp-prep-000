@@ -5,14 +5,16 @@ function init() {
 let index=0; 
 
 document.body.addEventListener('keydown', function(e)) {
+  const key = parseInt(e.detail || e.which);
   
-  
-}
-function 
-
-for (i=0, i< code.length; i++) {
-  code[i].addEventlistener('keydown', init())
-}
+  if (key === code[index]) {
+    index++ 
+    alert('Congrats!');
+  }
+      else {
+        index = 0;
+      }
+return initi()
 
 }
 
