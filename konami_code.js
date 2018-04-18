@@ -9,7 +9,10 @@ document.body.addEventListener('keydown', function(e)) {
   
   if (key === code[index]) {
     index++; 
-    alert('Congrats!');
+    
+    
+    if (index === code.length) {
+      alert('Congrats!');
   }
       else {
         index = 0;
